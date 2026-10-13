@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDFDB11CE2F4BF9CBADB8CA7 /* AtelierCanvasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFDB11CE2F44A9CBADB8CA7 /* AtelierCanvasApp.swift */; };
+		11969D719920BFBE820EAAE2 /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11969D7199204CBE820EAAE2 /* AppNavigation.swift */; };
+		592B787C4643BFDE82C599E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B787C464349DE82C599E7 /* ContentView.swift */; };
+		E0859D60C11FBF0DB172EF2F /* AtelierTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0859D60C11F430DB172EF2F /* AtelierTheme.swift */; };
+		4F584842B56CBFB3A8163EFC /* AtelierControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F584842B56C47B3A8163EFC /* AtelierControls.swift */; };
+		E21F100792F8BF7D8461A6FD /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F100792F84D7D8461A6FD /* GalleryView.swift */; };
+		03F72B10FA39BF6B822EF03A /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F72B10FA394C6B822EF03A /* GalleryViewModel.swift */; };
+		B6525289681EBF248367101C /* ArtworkThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6525289681E4A248367101C /* ArtworkThumbnailView.swift */; };
+		A405F4F51B84BF4082D82855 /* EmptyGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405F4F51B84474082D82855 /* EmptyGalleryView.swift */; };
+		0E331595E5C3BFCAACBD27AD /* StudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E331595E5C34ECAACBD27AD /* StudioView.swift */; };
+		81BFBB5B35ACBF98A302CA7E /* StudioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BFBB5B35AC4598A302CA7E /* StudioViewModel.swift */; };
+		B8CA66613AAFBFEB98D6972F /* StudioToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA66613AAF48EB98D6972F /* StudioToolbar.swift */; };
+		210D7D71DC6ABF599F919A93 /* CanvasRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210D7D71DC6A4B599F919A93 /* CanvasRepresentable.swift */; };
+		8FDED76A9B28BF5E884A86C9 /* CanvasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDED76A9B284E5E884A86C9 /* CanvasController.swift */; };
+		E32CA76C5CD2BFE8939D775D /* BrushKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CA76C5CD24CE8939D775D /* BrushKind.swift */; };
+		9051D6D06772BF45A741B95C /* BrushLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9051D6D067724645A741B95C /* BrushLibrary.swift */; };
+		C6EF0EB92EFEBF2FA9756224 /* BrushPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF0EB92EFE462FA9756224 /* BrushPickerView.swift */; };
+		FD61CADEC1A2BFE69AFC3CF6 /* ColorSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61CADEC1A248E69AFC3CF6 /* ColorSystem.swift */; };
+		66CFE45D6974BF8F9D6E5180 /* ColorPickerPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFE45D6974458F9D6E5180 /* ColorPickerPanel.swift */; };
+		171A50A5D351BFBCBE238675 /* RecentColorsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171A50A5D3514ABCBE238675 /* RecentColorsStore.swift */; };
+		37AB3DC0C325BF138444F8BF /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB3DC0C32540138444F8BF /* Artwork.swift */; };
+		CB7CADF4B6F1BF248EBCAFBB /* ArtworkStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CADF4B6F14E248EBCAFBB /* ArtworkStore.swift */; };
+		92D4CD42A3D5BF0AA9020934 /* DrawingFileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CD42A3D54A0AA9020934 /* DrawingFileStore.swift */; };
+		1EE0B3AAFF6BBF7BB5232607 /* ThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B3AAFF6B497BB5232607 /* ThumbnailGenerator.swift */; };
+		BF0575FEFED5BFAB98324909 /* ArtworkExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0575FEFED546AB98324909 /* ArtworkExporter.swift */; };
+		0B9389E25483BF8090EFA008 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9389E25483448090EFA008 /* ShareSheet.swift */; };
+		ED3E1D0A1CF8BF2186236656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3E1D0A1CF84A2186236656 /* Assets.xcassets */; };
+		BBC7AAE79945BF42B2411657 /* ArtworkStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7AAE799454542B2411657 /* ArtworkStoreTests.swift */; };
+		B7DC368C9A3EBF88BF96EC4B /* ArtworkMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC368C9A3E4788BF96EC4B /* ArtworkMetadataTests.swift */; };
+		298BF6A4D530BF9ABEE377B8 /* DrawingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BF6A4D5304D9ABEE377B8 /* DrawingDataTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8CCC87450C6749869C345642 /* AtelierCanvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtelierCanvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D02CEBA34305411AB00D65FF /* AtelierCanvasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtelierCanvasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFDB11CE2F44A9CBADB8CA7 /* AtelierCanvasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtelierCanvasApp.swift; sourceTree = "<group>"; };
+		11969D7199204CBE820EAAE2 /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
+		592B787C464349DE82C599E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E0859D60C11F430DB172EF2F /* AtelierTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtelierTheme.swift; sourceTree = "<group>"; };
+		4F584842B56C47B3A8163EFC /* AtelierControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtelierControls.swift; sourceTree = "<group>"; };
+		E21F100792F84D7D8461A6FD /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		03F72B10FA394C6B822EF03A /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		B6525289681E4A248367101C /* ArtworkThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkThumbnailView.swift; sourceTree = "<group>"; };
+		A405F4F51B84474082D82855 /* EmptyGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyGalleryView.swift; sourceTree = "<group>"; };
+		0E331595E5C34ECAACBD27AD /* StudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioView.swift; sourceTree = "<group>"; };
+		81BFBB5B35AC4598A302CA7E /* StudioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioViewModel.swift; sourceTree = "<group>"; };
+		B8CA66613AAF48EB98D6972F /* StudioToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioToolbar.swift; sourceTree = "<group>"; };
+		210D7D71DC6A4B599F919A93 /* CanvasRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasRepresentable.swift; sourceTree = "<group>"; };
+		8FDED76A9B284E5E884A86C9 /* CanvasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasController.swift; sourceTree = "<group>"; };
+		E32CA76C5CD24CE8939D775D /* BrushKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushKind.swift; sourceTree = "<group>"; };
+		9051D6D067724645A741B95C /* BrushLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushLibrary.swift; sourceTree = "<group>"; };
+		C6EF0EB92EFE462FA9756224 /* BrushPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushPickerView.swift; sourceTree = "<group>"; };
+		FD61CADEC1A248E69AFC3CF6 /* ColorSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSystem.swift; sourceTree = "<group>"; };
+		66CFE45D6974458F9D6E5180 /* ColorPickerPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerPanel.swift; sourceTree = "<group>"; };
+		171A50A5D3514ABCBE238675 /* RecentColorsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentColorsStore.swift; sourceTree = "<group>"; };
+		37AB3DC0C32540138444F8BF /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		CB7CADF4B6F14E248EBCAFBB /* ArtworkStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkStore.swift; sourceTree = "<group>"; };
+		92D4CD42A3D54A0AA9020934 /* DrawingFileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingFileStore.swift; sourceTree = "<group>"; };
+		1EE0B3AAFF6B497BB5232607 /* ThumbnailGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailGenerator.swift; sourceTree = "<group>"; };
+		BF0575FEFED546AB98324909 /* ArtworkExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkExporter.swift; sourceTree = "<group>"; };
+		0B9389E25483448090EFA008 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		ED3E1D0A1CF84A2186236656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2378719C6B254C68A3A72415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC7AAE799454542B2411657 /* ArtworkStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkStoreTests.swift; sourceTree = "<group>"; };
+		B7DC368C9A3E4788BF96EC4B /* ArtworkMetadataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkMetadataTests.swift; sourceTree = "<group>"; };
+		298BF6A4D5304D9ABEE377B8 /* DrawingDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingDataTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51F2A969026E479988B5FCB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C22B969C6A748578D34383F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14EF68A08E754078A3535109 = {
+			isa = PBXGroup;
+			children = (
+				4B32F2AC28FD4B9BAA82AF72 /* AtelierCanvas */,
+				F60FA2B21D77494A88DCD7AB /* AtelierCanvasTests */,
+				CA7C72B3BB3D44F791A45D1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA7C72B3BB3D44F791A45D1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CCC87450C6749869C345642 /* AtelierCanvas.app */,
+				D02CEBA34305411AB00D65FF /* AtelierCanvasTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B32F2AC28FD4B9BAA82AF72 /* AtelierCanvas */ = {
+			isa = PBXGroup;
+			children = (
+				FBA28117AD2E4C1C8EC8A36F /* App */,
+				E105926993AA414C891EDCB0 /* DesignSystem */,
+				0886668CD08E46B9A5E70524 /* Gallery */,
+				1184847B49764643B79769CF /* Studio */,
+				5A716E3B873244F7B64AB465 /* Canvas */,
+				B478F409386E4455A881F483 /* Brushes */,
+				C5F7E0ABC91F4588B234B6C1 /* Colors */,
+				47159C2571B84D80B41405B9 /* Persistence */,
+				97652B51DCB946DE84139B97 /* Thumbnails */,
+				E32F6DC1902A4773B16C9BB3 /* Export */,
+				58A3B91CFDEB464D90B36BED /* Resources */,
+			);
+			path = AtelierCanvas;
+			sourceTree = "<group>";
+		};
+		FBA28117AD2E4C1C8EC8A36F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FDFDB11CE2F44A9CBADB8CA7 /* AtelierCanvasApp.swift */,
+				11969D7199204CBE820EAAE2 /* AppNavigation.swift */,
+				592B787C464349DE82C599E7 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E105926993AA414C891EDCB0 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				E0859D60C11F430DB172EF2F /* AtelierTheme.swift */,
+				4F584842B56C47B3A8163EFC /* AtelierControls.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		0886668CD08E46B9A5E70524 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				E21F100792F84D7D8461A6FD /* GalleryView.swift */,
+				03F72B10FA394C6B822EF03A /* GalleryViewModel.swift */,
+				B6525289681E4A248367101C /* ArtworkThumbnailView.swift */,
+				A405F4F51B84474082D82855 /* EmptyGalleryView.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		1184847B49764643B79769CF /* Studio */ = {
+			isa = PBXGroup;
+			children = (
+				0E331595E5C34ECAACBD27AD /* StudioView.swift */,
+				81BFBB5B35AC4598A302CA7E /* StudioViewModel.swift */,
+				B8CA66613AAF48EB98D6972F /* StudioToolbar.swift */,
+			);
+			path = Studio;
+			sourceTree = "<group>";
+		};
+		5A716E3B873244F7B64AB465 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				210D7D71DC6A4B599F919A93 /* CanvasRepresentable.swift */,
+				8FDED76A9B284E5E884A86C9 /* CanvasController.swift */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		B478F409386E4455A881F483 /* Brushes */ = {
+			isa = PBXGroup;
+			children = (
+				E32CA76C5CD24CE8939D775D /* BrushKind.swift */,
+				9051D6D067724645A741B95C /* BrushLibrary.swift */,
+				C6EF0EB92EFE462FA9756224 /* BrushPickerView.swift */,
+			);
+			path = Brushes;
+			sourceTree = "<group>";
+		};
+		C5F7E0ABC91F4588B234B6C1 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				FD61CADEC1A248E69AFC3CF6 /* ColorSystem.swift */,
+				66CFE45D6974458F9D6E5180 /* ColorPickerPanel.swift */,
+				171A50A5D3514ABCBE238675 /* RecentColorsStore.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		47159C2571B84D80B41405B9 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				37AB3DC0C32540138444F8BF /* Artwork.swift */,
+				CB7CADF4B6F14E248EBCAFBB /* ArtworkStore.swift */,
+				92D4CD42A3D54A0AA9020934 /* DrawingFileStore.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		97652B51DCB946DE84139B97 /* Thumbnails */ = {
+			isa = PBXGroup;
+			children = (
+				1EE0B3AAFF6B497BB5232607 /* ThumbnailGenerator.swift */,
+			);
+			path = Thumbnails;
+			sourceTree = "<group>";
+		};
+		E32F6DC1902A4773B16C9BB3 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				BF0575FEFED546AB98324909 /* ArtworkExporter.swift */,
+				0B9389E25483448090EFA008 /* ShareSheet.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		58A3B91CFDEB464D90B36BED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED3E1D0A1CF84A2186236656 /* Assets.xcassets */,
+				2378719C6B254C68A3A72415 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F60FA2B21D77494A88DCD7AB /* AtelierCanvasTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBC7AAE799454542B2411657 /* ArtworkStoreTests.swift */,
+				B7DC368C9A3E4788BF96EC4B /* ArtworkMetadataTests.swift */,
+				298BF6A4D5304D9ABEE377B8 /* DrawingDataTests.swift */,
+			);
+			path = AtelierCanvasTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC42215BC75949A98D407222 /* AtelierCanvas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A11C1APPTARGET0000000002 /* Build configuration list for PBXNativeTarget "AtelierCanvas" */;
+			buildPhases = (
+				BBDBAF6B13614B07AC49FC8E /* Sources */,
+				51F2A969026E479988B5FCB7 /* Frameworks */,
+				97CEAF96A9C04C8FB48FF041 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtelierCanvas;
+			productName = AtelierCanvas;
+			productReference = 8CCC87450C6749869C345642 /* AtelierCanvas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B21B82FFC8414165AEDB142C /* AtelierCanvasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A11C1TESTTARGET000000003 /* Build configuration list for PBXNativeTarget "AtelierCanvasTests" */;
+			buildPhases = (
+				74B5A583E56F4E72991AFCBA /* Sources */,
+				9C22B969C6A748578D34383F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEAD0000ATEL1ERCANVAST01 /* PBXTargetDependency */,
+			);
+			name = AtelierCanvasTests;
+			productName = AtelierCanvasTests;
+			productReference = D02CEBA34305411AB00D65FF /* AtelierCanvasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA1C0D6A915C42AE85EFDC92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					EC42215BC75949A98D407222 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					B21B82FFC8414165AEDB142C = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = EC42215BC75949A98D407222;
+					};
+				};
+			};
+			buildConfigurationList = A11C1PR0JECT000000000001 /* Build configuration list for PBXProject "AtelierCanvas" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14EF68A08E754078A3535109;
+			productRefGroup = CA7C72B3BB3D44F791A45D1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC42215BC75949A98D407222 /* AtelierCanvas */,
+				B21B82FFC8414165AEDB142C /* AtelierCanvasTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97CEAF96A9C04C8FB48FF041 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3E1D0A1CF8BF2186236656 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBDBAF6B13614B07AC49FC8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDFDB11CE2F4BF9CBADB8CA7 /* AtelierCanvasApp.swift in Sources */,
+				11969D719920BFBE820EAAE2 /* AppNavigation.swift in Sources */,
+				592B787C4643BFDE82C599E7 /* ContentView.swift in Sources */,
+				E0859D60C11FBF0DB172EF2F /* AtelierTheme.swift in Sources */,
+				4F584842B56CBFB3A8163EFC /* AtelierControls.swift in Sources */,
+				E21F100792F8BF7D8461A6FD /* GalleryView.swift in Sources */,
+				03F72B10FA39BF6B822EF03A /* GalleryViewModel.swift in Sources */,
+				B6525289681EBF248367101C /* ArtworkThumbnailView.swift in Sources */,
+				A405F4F51B84BF4082D82855 /* EmptyGalleryView.swift in Sources */,
+				0E331595E5C3BFCAACBD27AD /* StudioView.swift in Sources */,
+				81BFBB5B35ACBF98A302CA7E /* StudioViewModel.swift in Sources */,
+				B8CA66613AAFBFEB98D6972F /* StudioToolbar.swift in Sources */,
+				210D7D71DC6ABF599F919A93 /* CanvasRepresentable.swift in Sources */,
+				8FDED76A9B28BF5E884A86C9 /* CanvasController.swift in Sources */,
+				E32CA76C5CD2BFE8939D775D /* BrushKind.swift in Sources */,
+				9051D6D06772BF45A741B95C /* BrushLibrary.swift in Sources */,
+				C6EF0EB92EFEBF2FA9756224 /* BrushPickerView.swift in Sources */,
+				FD61CADEC1A2BFE69AFC3CF6 /* ColorSystem.swift in Sources */,
+				66CFE45D6974BF8F9D6E5180 /* ColorPickerPanel.swift in Sources */,
+				171A50A5D351BFBCBE238675 /* RecentColorsStore.swift in Sources */,
+				37AB3DC0C325BF138444F8BF /* Artwork.swift in Sources */,
+				CB7CADF4B6F1BF248EBCAFBB /* ArtworkStore.swift in Sources */,
+				92D4CD42A3D5BF0AA9020934 /* DrawingFileStore.swift in Sources */,
+				1EE0B3AAFF6BBF7BB5232607 /* ThumbnailGenerator.swift in Sources */,
+				BF0575FEFED5BFAB98324909 /* ArtworkExporter.swift in Sources */,
+				0B9389E25483BF8090EFA008 /* ShareSheet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B5A583E56F4E72991AFCBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC7AAE79945BF42B2411657 /* ArtworkStoreTests.swift in Sources */,
+				B7DC368C9A3EBF88BF96EC4B /* ArtworkMetadataTests.swift in Sources */,
+				298BF6A4D530BF9ABEE377B8 /* DrawingDataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEAD0000ATEL1ERCANVAST01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC42215BC75949A98D407222 /* AtelierCanvas */;
+			targetProxy = PR0XY000ATEL1ERCANVAST01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		PR0XY000ATEL1ERCANVAST01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA1C0D6A915C42AE85EFDC92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC42215BC75949A98D407222;
+			remoteInfo = AtelierCanvas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin XCBuildConfiguration section */
+		B8D7F09BB969442CA455ABD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		602EFD8630E2460CA38A146C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0171ECB7D9334D1AA3BA6ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AtelierCanvas/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Atelier Canvas";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arthousepainting.ateliercanvas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				TARGETED_DEVICE_FAMILY = "1,2";
+
+			};
+			name = Debug;
+		};
+		1EFDF7E39D754866A78B604F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AtelierCanvas/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Atelier Canvas";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arthousepainting.ateliercanvas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				TARGETED_DEVICE_FAMILY = "1,2";
+
+			};
+			name = Release;
+		};
+		385FF97639104714BE90B0BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arthousepainting.ateliercanvas.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AtelierCanvas.app/AtelierCanvas";
+
+			};
+			name = Debug;
+		};
+		E5020170452E439F91885FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arthousepainting.ateliercanvas.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AtelierCanvas.app/AtelierCanvas";
+
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A11C1PR0JECT000000000001 /* Build configuration list for PBXProject "AtelierCanvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8D7F09BB969442CA455ABD8 /* Debug */,
+				602EFD8630E2460CA38A146C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A11C1APPTARGET0000000002 /* Build configuration list for PBXNativeTarget "AtelierCanvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0171ECB7D9334D1AA3BA6ABB /* Debug */,
+				1EFDF7E39D754866A78B604F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A11C1TESTTARGET000000003 /* Build configuration list for PBXNativeTarget "AtelierCanvasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385FF97639104714BE90B0BF /* Debug */,
+				E5020170452E439F91885FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA1C0D6A915C42AE85EFDC92 /* Project object */;
+}
